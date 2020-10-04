@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="referrer" content="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/registry.css">
+    <script src="./js/require.js" async="true" defer data-main="./js/main.js" id="currentpage" targetpage="registrymodule"></script>
+</head>
+
+<body>
+    <div class="registry">
+        <form action="http://10.31.152.60/project/php/registry.php" method="post">
+            <h1>欢迎注册</h1>
+            <div class="box">
+                <p><i>用户名</i><input type="text" class="username" name="username" placeholder="您的账户名和登录名"></p>
+
+            </div><span></span>
+            <div class="box">
+                <p><i>设置密码</i><input type="password" class="password" name="password" placeholder="建议至少使用两种字符组合"></p>
+
+            </div><span></span>
+            <div class="box">
+                <p><i>中国0086</i><input type="text" class="tel" name="tel" placeholder="建议使用常用手机号"></p>
+
+            </div><span></span>
+            <div class="box">
+                <p><i>验证码</i><input type="text" id="yzm" placeholder="请输入验证码">
+                    <div class="box1">请点击</div>
+                </p>
+            </div><span></span>
+            <input type="submit" value="立即注册" class="btn" name="submit">
+        </form>
+        <a href="./login.html">立即登录</a>
+    </div>
+</body>
+
+</html>

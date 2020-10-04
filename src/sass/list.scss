@@ -1,0 +1,108 @@
+@import "header";
+@import "nav";
+@import "footer";
+@import "public";
+.content {
+    width: 1200px;
+    margin-top: 20px;
+    margin-left: 40px;
+    display: inline-block;
+    .contleft {
+        float: left;
+        width: 188px;
+        border: 1px solid #e7e7e7;
+        li {
+            line-height: 40px;
+            margin: 10px 0;
+            text-align: center;
+        }
+        li:first-child {
+            margin-top: 0px;
+            background-color: #e7e7e7;
+        }
+    }
+    .contright {
+        width: 1000px;
+        float: right;
+        .conthead {
+            width: 1000px;
+            height: 40px;
+            background-color: #f7f7f7;
+            li {
+                width: 81px;
+                color: #777;
+                text-align: center;
+                line-height: 40px;
+                float: left;
+                border-right: 1px solid #e7e7e7;
+            }
+        }
+        .contlist {
+            margin-top: 10px;
+            li {
+                float: left;
+                border-top: 1px solid #e5e5e5;
+                border-left: 1px solid #e5e5e5;
+                width: 230px;
+                height: 326px;
+                border: #e7e7e7 1px solid;
+                margin: 10px 5px;
+            }
+        }
+    }
+}
+
+.conthead li {
+    button {
+        width: 81px;
+        height: 40px;
+        border: none;
+        color: #777;
+    }
+}
+
+.contlist li {
+    a {
+        display: block;
+        width: 228px;
+        height: 228px;
+        img {
+            width: 228px;
+            height: 228px;
+        }
+    }
+    .p1 {
+        width: 200px;
+        overflow: hidden;
+        font-size: 14px;
+        line-height: 22px;
+        height: 22px;
+        margin-left: 14px;
+    }
+    .p3 {
+        font-size: 14px;
+        line-height: 22px;
+        height: 22px;
+        margin-left: 14px;
+        .prise {
+            font-size: 20px;
+            color: #ee394b;
+            line-height: 44px;
+        }
+        .sailnum {
+            font-size: 12px;
+            color: #999;
+            float: right;
+            line-height: 12px;
+        }
+    }
+}
+
+.content ::after {
+    content: "";
+    display: block;
+    height: 0px;
+    clear: both;
+    overflow: hidden;
+    visibility: hidden;
+}

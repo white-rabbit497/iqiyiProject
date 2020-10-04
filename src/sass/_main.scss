@@ -1,0 +1,410 @@
+@charset "utf-8"; //设置字符编码
+
+/*上下的广告位置*/
+
+%adv {
+    height: 120px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+
+/*!每一模块的头部样式*/
+
+%parthead {
+    height: 36px;
+    margin-bottom: 20px;
+    img {
+        display: inline-block;
+        width: 36px;
+        height: 36px;
+        float: left;
+    }
+    h1 {
+        font-weight: normal;
+        float: left;
+        line-height: 36px;
+        margin: 0 10px;
+        font-size: 28px;
+        color: #333;
+    }
+    span {
+        float: left;
+        display: inline-block;
+        margin-bottom: 4px;
+        height: 16px;
+        line-height: 16px;
+        margin: 17px 10px;
+        padding-left: 20px;
+        font-size: 16px;
+        color: #c2c2c2;
+        border-left: 1px solid red;
+    }
+    a {
+        float: right;
+        display: inline-block;
+        width: 60px;
+        line-height: 36px;
+        font-size: 14px;
+        color: #666;
+        em {
+            display: inline-block;
+            width: 6px;
+            height: 12px;
+            margin-left: 5px;
+            background-image: url("http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/iqiyiMallPcRedMore.png");
+            background-repeat: no-repeat;
+            background-position: 0px 0px;
+        }
+    }
+}
+
+
+/*!第二模块的右侧头部样式*/
+
+%righthead {
+    width: 100%;
+    background: url("http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/nav_tint_redbg.png") no-repeat;
+    height: 50px;
+    line-height: 50px;
+    i {
+        width: 20px;
+        height: 20px;
+        margin-left: 16px;
+        margin-right: 12px;
+        background: url("http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/good_hot_redranking.png") no-repeat;
+        float: left;
+        margin-top: 15px;
+        display: inline-block;
+    }
+    h1 {
+        font-size: 21px;
+        color: #333;
+        display: inline-block;
+        float: left;
+        width: 290px;
+        font-weight: normal;
+    }
+}
+
+
+/*!版心*/
+
+.maincon {
+    width: 1200px;
+    overflow: hidden;
+    margin: 0 auto;
+    .adv1 {
+        @extend %adv;
+    }
+    .adv2 {
+        @extend %adv;
+    }
+}
+
+
+/*!第一块部分*/
+
+.part1 {
+    display: inline-block;
+    .parthead {
+        @extend %parthead;
+    }
+    .part1content ul {
+        width: 1200px;
+        display: inline-block;
+        border-right: 1px solid #e5e5e5;
+        border-bottom: 1px solid #e5e5e5;
+        li {
+            float: left;
+            border-top: 1px solid #e5e5e5;
+            border-left: 1px solid #e5e5e5;
+            width: 239px;
+            height: 256px;
+            a {
+                display: block;
+                width: 239px;
+                height: 155px;
+                img {
+                    width: 140px;
+                    height: 140px;
+                    margin: 20px 45px;
+                }
+            }
+            p {
+                font-size: 14px;
+                line-height: 22px;
+                height: 22px;
+                margin-left: 14px;
+                a {
+                    font-family: 'Microsoft YaHei';
+                    color: #777;
+                }
+            }
+        }
+    }
+}
+
+
+/*!第一块部分 的每个小块*/
+
+.goods {
+    cursor: pointer;
+    p:nth-child(2) {
+        margin-top: 15px;
+        margin-right: 14px;
+    }
+    p:nth-child(3) {
+        color: #999;
+        span {
+            padding-left: 8px;
+            margin-right: 5px;
+            display: inline-block;
+            height: 18px;
+            width: 52px;
+            line-height: 18px;
+            position: relative;
+            font-size: 12px;
+            color: #fff;
+            background: url(/project/src/img/main_red.png) no-repeat;
+            background-position: 0 0;
+            border-radius: 3px;
+        }
+    }
+    p:nth-child(4) {
+        .prise {
+            font-size: 20px;
+            color: #ee394b;
+            line-height: 44px;
+        }
+        .sailnum {
+            font-size: 12px;
+            color: #999;
+            float: right;
+            line-height: 44px;
+        }
+    }
+}
+
+
+/*!第二块部分*/
+
+.part2 {
+    display: inline-block;
+    .parthead {
+        @extend %parthead;
+    }
+    .left {
+        width: 840px;
+        float: left;
+        overflow: hidden;
+        margin-right: 20px;
+        li {
+            width: 100%;
+            border: 1px solid #e5e5e5;
+            box-sizing: border-box;
+            height: 292px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            img {
+                width: 580px;
+                height: 100%;
+                float: left;
+            }
+        }
+    }
+}
+
+
+/*!第二部分左侧*/
+
+.detial {
+    width: 258px;
+    float: left;
+    .shoptitle {
+        margin: 117px auto 0;
+        width: 240px;
+        font-size: 24px;
+        color: #333;
+        line-height: 24px;
+        text-align: center;
+        overflow: hidden;
+        height: 24px;
+    }
+    .shopprise {
+        text-align: center;
+        font-size: 18px;
+        color: #666;
+        line-height: 18px;
+        margin-top: 14px;
+        height: 18px;
+        overflow: hidden;
+        padding: 0 10px;
+    }
+}
+
+
+/*!第二部分右侧*/
+
+.right1 {
+    width: 340px;
+    float: right;
+    overflow: hidden;
+    margin-bottom: 20px;
+    .righthead {
+        @extend %righthead;
+    }
+    li {
+        img {
+            width: 90px;
+            height: 90px;
+            float: left;
+        }
+    }
+    .shopinfo {
+        float: left;
+        margin-left: 20px;
+        border-bottom: 1px solid #e5e5e5;
+        box-sizing: border-box;
+        position: relative;
+        height: 110px;
+        width: 200px;
+        p:nth-child(1) {
+            width: 57px;
+            height: 20px;
+            margin-top: 14px;
+            margin-bottom: 10px;
+        }
+        p:nth-child(2) {
+            width: 100%;
+            font-size: 14px;
+            color: #333;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            line-height: 14px;
+        }
+        p:nth-child(3) {
+            width: 100%;
+            position: absolute;
+            bottom: 10px;
+            left: 0;
+            line-height: 18px;
+            .shopprise {
+                font-size: 18px;
+                color: #ee394b;
+                display: inline-block;
+                float: left;
+            }
+            .shopsailnum {
+                font-size: 12px;
+                color: #999;
+                float: right;
+                em {
+                    color: #ee394b;
+                    padding-left: 10px;
+                    font-style: normal;
+                }
+            }
+        }
+    }
+}
+
+.right2 {
+    width: 340px;
+    float: right;
+    overflow: hidden;
+    margin-bottom: 20px;
+    .righthead {
+        @extend %righthead;
+    }
+    ul {
+        width: 100%;
+        background: #fff;
+        border: 1px solid #e5e5e5;
+        border-top: 0;
+        box-sizing: border-box;
+        li {
+            width: 340px;
+            height: 230px;
+            img {
+                padding-left: 10px;
+                padding-top: 10px;
+            }
+            .title {
+                font-size: 14px;
+                color: #333;
+                line-height: 14px;
+                margin-bottom: 8px;
+                margin-left: 10px;
+                margin-right: 10px;
+                height: 14px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            .discribe {
+                font-size: 12px;
+                color: #999;
+                line-height: 12px;
+                margin-left: 10px;
+                margin-right: 10px;
+                height: 12px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+}
+
+.part3 {
+    display: inline-block;
+    position: relative;
+    .parthead {
+        @extend %parthead;
+    }
+    ul {
+        width: 1200px;
+        overflow: hidden;
+        height: 239px;
+        position: relative;
+        border: 1px solid #e5e5e5;
+        li {
+            top: 0;
+            left: 0;
+            width: 1200px;
+            margin-left: -1px;
+            overflow: hidden;
+            position: absolute;
+            div {
+                float: left;
+                margin: -1px 0 0 -1px;
+                display: block;
+                overflow: hidden;
+                width: 119px;
+                height: 119px;
+                border: 1px solid #e5e5e5;
+            }
+        }
+    }
+    a {
+        z-index: 10;
+        position: absolute;
+        top: 50%;
+        margin-top: -30px;
+        width: 40px;
+        height: 60px;
+        background-repeat: no-repeat;
+    }
+    .left {
+        background-image: url("http://www.iqiyipic.com/common/fix/PCIndex/images/newPCindexprev.png");
+        left: 0;
+        background-position: 0 0;
+    }
+    .right {
+        background-image: url("http://www.iqiyipic.com/common/fix/PCIndex/images/newPcINdexNext.png");
+        right: 0;
+        background-position: 0 0;
+    }
+}

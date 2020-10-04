@@ -1,0 +1,81 @@
+body {
+  background-size: cover;
+  background-image: url("https://passport.baidu.com/static/passpc-account/img/reg_bg_min.jpg");
+}
+
+.login {
+  width: 400px;
+  height: 300px;
+  margin: 100px auto;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+.box {
+  width: 350px;
+  height: 40px;
+  margin: 30px auto;
+  position: relative;
+}
+.box input {
+  height: 40px;
+  background: #fff;
+  border: 1px solid #E0E0E0;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 240px;
+  color: #000;
+}
+
+.box:nth-child(3) {
+  margin-bottom: 0px;
+}
+
+.box p {
+  margin: 9px auto;
+}
+
+i {
+  font-size: 16px;
+  font-style: normal;
+  padding-left: 8px;
+  padding-right: 15px;
+}
+
+.btn {
+  width: 350px;
+  height: 50px;
+  background: #3f89ec;
+  border-radius: 25px;
+  line-height: 50px;
+  border: none;
+  margin: 10px auto;
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  color: #fff;
+}
+
+strong {
+  font-weight: normal;
+  font-size: 14px;
+  background: gray;
+  color: black;
+  display: inline-block;
+}
+
+span {
+  font-size: 14px;
+  height: 28px;
+  display: inline-block;
+  padding-left: 20px;
+}
+
+a {
+  text-decoration: none;
+  float: right;
+  margin-right: 50px;
+}

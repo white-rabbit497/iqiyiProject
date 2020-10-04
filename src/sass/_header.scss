@@ -1,0 +1,254 @@
+@charset "utf-8";
+$conwidth:1200px;
+$height:32px;
+$bgcolor:#f7f7f7;
+$fontcolor:#999;
+header {
+    width: 100%;
+    height: 129px;
+    .headercon {
+        /*!头部版心*/
+        width: $conwidth;
+        margin: 0 auto;
+        .search {
+            width: $conwidth;
+            height: 67px;
+            padding-top: 30px;
+        }
+    }
+    .head {
+        height: $height;
+        width: 100%;
+        background-color: $bgcolor;
+        border-bottom: 1px solid #e7e7e7;
+        color: $fontcolor;
+        font-size: 12px;
+        a {
+            color: $fontcolor;
+        }
+        a:hover {
+            color: red;
+        }
+        .headcon {
+            width: $conwidth;
+            margin: 0 auto;
+            #headleft {
+                float: left;
+                height: $height;
+            }
+            #headright {
+                float: right;
+                height: $height;
+                line-height: $height
+            }
+        }
+    }
+}
+
+#headleft ul li {
+    height: $height;
+    line-height: $height;
+    float: left;
+    margin-right: 20px;
+    // a{
+    //     color: $fontcolor;
+    // }
+    // a:hover{
+    //   color:red;
+    // }
+}
+
+#headright div {
+    height: $height;
+    line-height: $height;
+    float: left;
+    margin-right: 20px;
+    a {
+        i {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            margin-top: 2px;
+            cursor: pointer;
+            background-image: url("http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/topMenu_redicon.png");
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+#headright div:nth-child(1) {
+    a {
+        i {
+            background-position: -136px 0px;
+        }
+    }
+}
+
+#headright div:nth-child(2) {
+    a {
+        i {
+            background-position: 0px 0px;
+        }
+    }
+}
+
+#headright div:nth-child(3) {
+    a {
+        i {
+            background-position: -110px 0px;
+        }
+    }
+}
+
+#headright ul {
+    height: 14px;
+    line-height: 14px;
+    float: left;
+    margin-top: 8px;
+    li {
+        float: left;
+        padding: 0 20px;
+        border-left: 1px solid #e5e5e5;
+        i {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            background-image: url("http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/topMenu_redicon.png");
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+#headright li:nth-child(1) {
+    position: relative;
+    i:first-child {
+        background-position: -40px 0px;
+    }
+    i:last-child {
+        background-position: -77px 5px;
+    }
+    #QR {
+        position: absolute;
+        border-left: 1px solid #e7e7e7;
+        border-bottom: 1px solid #e7e7e7;
+        border-right: 1px solid #e7e7e7;
+        border-top: 0;
+        top: 25px;
+        background: #fff;
+        padding: 10px;
+        width: 180px;
+        height: 180px;
+        display: none;
+    }
+}
+
+#headright li:nth-child(2) {
+    i {
+        background-position: -60px 0px;
+    }
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    .search-box {
+        position: relative;
+        input:first-child {
+            width: 406px;
+            height: 14px;
+            vertical-align: top;
+            background: #fff;
+            font-size: 12px;
+            padding-left: 10px;
+            color: #999;
+            line-height: 14px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            outline: 0;
+            float: left;
+            border: 1px solid #eb3b4a;
+        }
+        input:last-child {
+            width: 100px;
+            height: 36px;
+            vertical-align: top;
+            position: relative;
+            left: -6px;
+            color: #fff;
+            background: #eb3b4a;
+            font-size: 20px;
+            font-family: "\5FAE\8F6F\96C5\9ED1";
+            outline: 0;
+            border: 0;
+        }
+    }
+    .search-right {
+        width: 209px;
+        height: 50px;
+        li {
+            width: 160px;
+            height: 50px;
+            position: absolute;
+            dd {
+                position: relative;
+                top: -46px;
+                left: 56px;
+                font-size: 12px;
+            }
+            li:first-child {
+                display: none;
+            }
+        }
+        span {
+            display: inline-block;
+            width: 19px;
+            height: 19px;
+            position: relative;
+            top: 33px;
+            background-image: url("http://pic0.iqiyipic.com/common/20150714/arrow2.gif");
+            background-repeat: no-repeat;
+        }
+        .leftbtn {
+            left: 140px;
+            background-position: 0px 0px;
+        }
+        .rightbtn {
+            left: 182px;
+            background-position: -20px 0px;
+        }
+    }
+    .hots {
+        height: 14px;
+        position: absolute;
+        top: 104px;
+        left: 384px;
+        ul {
+            li {
+                float: left;
+                font-family: Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
+                font-size: 12px;
+                margin-left: 10px;
+                padding-left: 10px;
+                border-left: 1px solid $fontcolor;
+                a {
+                    color: $fontcolor;
+                }
+            }
+            li:first-child {
+                margin-left: 0px;
+                padding-left: 0px;
+                border-left: none;
+                a {
+                    color: #eb3b4a;
+                }
+            }
+            li:nth-child(4) {
+                a {
+                    color: #eb3b4a;
+                }
+            }
+        }
+    }
+}

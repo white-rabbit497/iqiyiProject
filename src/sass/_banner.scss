@@ -1,0 +1,66 @@
+@charset "utf-8";
+.banner ol li.active {
+    background-color: red;
+}
+
+.banner ol li:hover {
+    background-color: red;
+}
+
+.banner {
+    width: 1263px;
+    height: 400px;
+    position: relative;
+    ul {
+        height: 400px;
+        width: 1263px;
+        overflow: hidden;
+    }
+    ul li {
+        position: absolute;
+        height: 400px;
+        width: 1263px;
+        overflow: hidden;
+        opacity: 0;
+        img {
+            position: absolute;
+            left: -332px;
+        }
+    }
+    ol {
+        z-index: 1;
+        position: absolute;
+        bottom: 22px;
+        left: 50%;
+        li {
+            border-radius: 50%;
+            width: 12px;
+            height: 12px;
+            float: left;
+            margin: 0 6px;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+    }
+    a {
+        position: absolute;
+        z-index: 1;
+        display: inline-block;
+        width: 66px;
+        height: 66px;
+        border-radius: 50%;
+        top: 50%;
+        z-index: 3;
+    }
+    .left {
+        left: 40px;
+        background-image: url(/project/src/img/main_left.png);
+        background-repeat: no-repeat;
+        background-position: 0px 0px;
+    }
+    .right {
+        right: 40px;
+        background-image: url(/project/src/img/main_right.png);
+        background-repeat: no-repeat;
+        background-position: 0px 0px;
+    }
+}

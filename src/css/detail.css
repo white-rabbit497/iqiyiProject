@@ -1,0 +1,899 @@
+@charset "GBK";
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  text-decoration: none;
+}
+
+a {
+  color: #3c3c3c;
+  cursor: pointer;
+}
+
+a:hover {
+  color: red;
+}
+
+em {
+  font-style: normal;
+}
+
+header {
+  width: 100%;
+  height: 129px;
+}
+header .headercon {
+  /*!头部版心*/
+  width: 1200px;
+  margin: 0 auto;
+}
+header .headercon .search {
+  width: 1200px;
+  height: 67px;
+  padding-top: 30px;
+}
+header .head {
+  height: 32px;
+  width: 100%;
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #e7e7e7;
+  color: #999999;
+  font-size: 12px;
+}
+header .head a {
+  color: #999999;
+}
+header .head a:hover {
+  color: red;
+}
+header .head .headcon {
+  width: 1200px;
+  margin: 0 auto;
+}
+header .head .headcon #headleft {
+  float: left;
+  height: 32px;
+}
+header .head .headcon #headright {
+  float: right;
+  height: 32px;
+  line-height: 32px;
+}
+
+#headleft ul li {
+  height: 32px;
+  line-height: 32px;
+  float: left;
+  margin-right: 20px;
+}
+
+#headright div {
+  height: 32px;
+  line-height: 32px;
+  float: left;
+  margin-right: 20px;
+}
+#headright div a i {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-top: 2px;
+  cursor: pointer;
+  background-image: url("http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/topMenu_redicon.png");
+  background-repeat: no-repeat;
+}
+
+#headright div:nth-child(1) a i {
+  background-position: -136px 0px;
+}
+
+#headright div:nth-child(2) a i {
+  background-position: 0px 0px;
+}
+
+#headright div:nth-child(3) a i {
+  background-position: -110px 0px;
+}
+
+#headright ul {
+  height: 14px;
+  line-height: 14px;
+  float: left;
+  margin-top: 8px;
+}
+#headright ul li {
+  float: left;
+  padding: 0 20px;
+  border-left: 1px solid #e5e5e5;
+}
+#headright ul li i {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-image: url("http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/topMenu_redicon.png");
+  background-repeat: no-repeat;
+}
+
+#headright li:nth-child(1) {
+  position: relative;
+}
+#headright li:nth-child(1) i:first-child {
+  background-position: -40px 0px;
+}
+#headright li:nth-child(1) i:last-child {
+  background-position: -77px 5px;
+}
+#headright li:nth-child(1) #QR {
+  position: absolute;
+  border-left: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
+  border-right: 1px solid #e7e7e7;
+  border-top: 0;
+  top: 25px;
+  background: #fff;
+  padding: 10px;
+  width: 180px;
+  height: 180px;
+  display: none;
+}
+
+#headright li:nth-child(2) i {
+  background-position: -60px 0px;
+}
+
+.search {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.search .search-box {
+  position: relative;
+}
+.search .search-box input:first-child {
+  width: 406px;
+  height: 14px;
+  vertical-align: top;
+  background: #fff;
+  font-size: 12px;
+  padding-left: 10px;
+  color: #999;
+  line-height: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  outline: 0;
+  float: left;
+  border: 1px solid #eb3b4a;
+}
+.search .search-box input:last-child {
+  width: 100px;
+  height: 36px;
+  vertical-align: top;
+  position: relative;
+  left: -6px;
+  color: #fff;
+  background: #eb3b4a;
+  font-size: 20px;
+  font-family: "\5FAE\8F6F\96C5\9ED1";
+  outline: 0;
+  border: 0;
+}
+.search .search-right {
+  width: 209px;
+  height: 50px;
+}
+.search .search-right li {
+  width: 160px;
+  height: 50px;
+  position: absolute;
+}
+.search .search-right li dd {
+  position: relative;
+  top: -46px;
+  left: 56px;
+  font-size: 12px;
+}
+.search .search-right li li:first-child {
+  display: none;
+}
+.search .search-right span {
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  position: relative;
+  top: 33px;
+  background-image: url("http://pic0.iqiyipic.com/common/20150714/arrow2.gif");
+  background-repeat: no-repeat;
+}
+.search .search-right .leftbtn {
+  left: 140px;
+  background-position: 0px 0px;
+}
+.search .search-right .rightbtn {
+  left: 182px;
+  background-position: -20px 0px;
+}
+.search .hots {
+  height: 14px;
+  position: absolute;
+  top: 104px;
+  left: 384px;
+}
+.search .hots ul li {
+  float: left;
+  font-family: Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
+  font-size: 12px;
+  margin-left: 10px;
+  padding-left: 10px;
+  border-left: 1px solid #999999;
+}
+.search .hots ul li a {
+  color: #999999;
+}
+.search .hots ul li:first-child {
+  margin-left: 0px;
+  padding-left: 0px;
+  border-left: none;
+}
+.search .hots ul li:first-child a {
+  color: #eb3b4a;
+}
+.search .hots ul li:nth-child(4) a {
+  color: #eb3b4a;
+}
+
+footer {
+  margin-top: 50px;
+  width: 100%;
+}
+footer .top {
+  height: 495px;
+  width: 100%;
+  border-top: 1px solid #e5e5e5;
+  background: #fafafa;
+  border-bottom: 1px solid #e5e5e5;
+}
+footer .top .topcon {
+  height: 495px;
+  width: 1200px;
+  margin: 0 auto;
+}
+footer .bottom {
+  width: 100%;
+  height: 230px;
+  font-size: 12px;
+  background-color: #f5f5f5;
+}
+
+.iconlist ul {
+  height: 138px;
+  width: 1200px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.iconlist ul li {
+  height: 100%;
+  width: 20%;
+  display: inline-block;
+  float: left;
+  position: relative;
+}
+.iconlist ul li img {
+  position: absolute;
+  top: 32px;
+  left: 39px;
+}
+.iconlist ul li div {
+  position: absolute;
+  top: 50px;
+  left: 120px;
+}
+.iconlist ul li div p {
+  margin-bottom: 6px;
+  font-size: 12px;
+  color: #777;
+}
+
+.list2 ul {
+  height: 126px;
+  width: 1200px;
+  margin-top: 30px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.list2 ul li {
+  width: 240px;
+  height: 126px;
+  float: left;
+}
+.list2 ul li a {
+  display: block;
+  position: relative;
+  left: 74px;
+  margin-bottom: 3px;
+  font-size: 14px;
+  color: #333;
+}
+.list2 ul li a:first-child {
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.QRlist ul {
+  width: 1200px;
+  height: 120px;
+  margin-top: 39px;
+  margin-bottom: 39px;
+}
+.QRlist ul li {
+  float: left;
+  width: 400px;
+  height: 120px;
+}
+.QRlist ul li img {
+  width: 120px;
+  height: 120px;
+  float: left;
+}
+.QRlist ul li div {
+  float: left;
+  width: 270px;
+  margin-left: 10px;
+}
+.QRlist ul li div h1 {
+  color: #333;
+  font-size: 24px;
+  padding-bottom: 5px;
+}
+.QRlist ul li div p {
+  color: #666;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.links {
+  width: 1200px;
+  margin: 0 auto;
+}
+.links ul {
+  display: inline-block;
+  height: 56px;
+}
+.links ul li {
+  margin-right: 55px;
+}
+.links ul li a {
+  color: #777;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+.menu ul {
+  width: 100%;
+  height: 33px;
+  padding-left: 200px;
+}
+.menu ul li {
+  width: 52px;
+  height: 16px;
+  line-height: 16px;
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-right: 1px solid #333;
+}
+.menu ul li a {
+  color: #333;
+}
+
+.jubao {
+  width: 1200px;
+  height: 33px;
+  margin: 0 auto;
+}
+.jubao li {
+  line-height: 33px;
+  float: left;
+  margin-left: 20px;
+}
+.jubao li a {
+  color: #333;
+}
+
+.copyright {
+  text-align: center;
+}
+
+nav {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background-color: #ee394b;
+  margin-top: 20px;
+}
+nav .navcon {
+  width: 1200px;
+  height: 40px;
+  margin: 0 auto;
+}
+nav .navcon li {
+  float: left;
+  padding: 0 25px;
+}
+nav .navcon li a {
+  font-size: 16px;
+  color: #fff;
+}
+
+.content {
+  width: 1200px;
+  height: 600px;
+  border: 1px solid #e7e7e7;
+  margin: 0 auto;
+  color: #777;
+}
+.content .crumbs {
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  font-size: 13px;
+}
+.content .crumbs a {
+  color: #333;
+}
+.content .crumbs span {
+  color: #666;
+}
+.content .glass {
+  width: 420px;
+  display: inline;
+  float: left;
+}
+.content .goods_detail {
+  display: inline-block;
+  float: left;
+  width: 759px;
+  height: 400px;
+  margin-left: 20px;
+  position: relative;
+}
+
+.glass .spic {
+  position: relative;
+  width: 418px;
+  height: 418px;
+  border: 1px solid #e7e7e7;
+  z-index: 20;
+  display: table;
+  table-layout: fixed;
+}
+.glass .spic img {
+  display: inline-block;
+  width: 418px;
+  height: 418px;
+}
+.glass .spic .sf {
+  overflow: hidden;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 220px;
+  height: 220px;
+  background: url(/project/src/img/image_zoom.png) repeat;
+  cursor: move;
+  z-index: 10;
+  visibility: hidden;
+}
+.glass .bf {
+  z-index: 99;
+  visibility: hidden;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  left: 454px;
+  top: 240px;
+  border: 1px solid red;
+}
+.glass .bpic {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 99;
+}
+.glass .piclist {
+  position: relative;
+  width: 420px;
+  height: 60px;
+  margin-top: 13px;
+}
+.glass .piclist ul {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  height: 60px;
+  margin-left: 20px;
+}
+.glass .piclist ul li {
+  width: 60px;
+  height: 60px;
+  float: left;
+  margin-right: 20px;
+}
+.glass .piclist ul li img {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+}
+
+.goods_detail h3 {
+  overflow: hidden;
+  color: #333;
+  font-size: 18px;
+  font-family: "\5FAE\8F6F\96C5\9ED1";
+  width: 100%;
+  font-weight: bold;
+  display: inline;
+}
+.goods_detail strong {
+  color: #ee394b;
+  font-size: 14px;
+  font-family: "\5FAE\8F6F\96C5\9ED1";
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+.goods_detail .prise {
+  height: 55px;
+  padding: 15px 20px;
+  background: url("http://www.iqiyipic.com/common/fix/qy_shop/detail-priceBg.png") no-repeat;
+  color: #777;
+  overflow: hidden;
+  background-size: cover;
+  position: relative;
+}
+.goods_detail .prise label {
+  display: inline-block;
+  font-family: "\5b8b\4f53";
+  vertical-align: middle;
+  line-height: 50px;
+  float: left;
+}
+.goods_detail .prise em {
+  font-family: arial;
+  font-size: 20px;
+  font-style: normal;
+  color: #ee394b;
+  white-space: nowrap;
+  line-height: 50px;
+}
+.goods_detail .prise .now_prise {
+  position: absolute;
+  top: 10px;
+  left: 114px;
+  font-size: 30px;
+  font-weight: normal;
+  color: #ee394b;
+  white-space: nowrap;
+  line-height: 50px;
+}
+.goods_detail .detail_panel {
+  overflow: hidden;
+  padding: 15px 0 10px 0;
+  border-bottom: 1px dotted #c8c8c8;
+  display: block;
+  width: 100%;
+}
+.goods_detail .detail_panel li {
+  font-size: 12px;
+  color: #3c3c3c;
+  font-family: Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
+  display: inline;
+  float: left;
+  width: 130px;
+  border-left: 1px solid #ccc;
+  margin-left: -1px;
+  text-align: center;
+}
+.goods_detail .detail_panel li i {
+  width: 16px;
+  height: 12px;
+  background: url("http://www.iqiyipic.com/common/fix/iqiyi_shop_images/detail-icon.png") no-repeat;
+  display: inline-block;
+  vertical-align: -1px;
+}
+.goods_detail .detail_panel li span {
+  color: #c00;
+}
+.goods_detail .detail_panel li:nth-child(2) i {
+  background-position: -22px 0px;
+}
+
+.datail-info {
+  margin-top: 20px;
+  padding: 0 0 0 20px;
+  color: #777;
+  font: 12px "微软雅黑", Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
+}
+.datail-info .info-postAge {
+  display: inline-block;
+  color: #777;
+}
+.datail-info .info-postAge .deliveryAdd {
+  color: #3c3c3c;
+  font-family: Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
+}
+.datail-info .info-postAge .desc {
+  margin: 0 3px;
+  color: #999;
+}
+.datail-info .info-postAge .addr {
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+  z-index: 10;
+}
+.datail-info .info-postAge .addr .addr-info {
+  cursor: pointer;
+  color: #3c3c3c;
+}
+.datail-info .info-postAge .addr .addr-pop {
+  position: absolute;
+  width: 330px;
+  border: 1px solid #e7e7e7;
+  background-color: #fff;
+  font-size: 12px;
+  top: 20px;
+  left: 0;
+  z-index: 100;
+  display: none;
+  padding: 10px;
+}
+.datail-info .info-postAge .post-prise {
+  color: #3c3c3c;
+}
+
+.addr-info a {
+  cursor: pointer;
+  color: #3c3c3c;
+}
+.addr-info i {
+  width: 9px;
+  height: 6px;
+  display: inline-block;
+  background-image: url("http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/detail_icon4.png");
+  background-repeat: no-repeat;
+  background-position: -100px 0px;
+  vertical-align: middle;
+}
+
+/*!省级联动*/
+.addr-pop .close {
+  position: absolute;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: #999;
+  right: 6px;
+  top: 0;
+}
+.addr-pop li {
+  position: relative;
+  display: inline;
+  float: left;
+  padding: 5px 10px 5px 0;
+}
+
+.amount {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-family: Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
+}
+.amount label {
+  float: left;
+  display: inline-block;
+  text-align: left;
+}
+.amount span {
+  float: left;
+  display: inline-block;
+  font-size: 0;
+  vertical-align: middle;
+}
+.amount span input {
+  width: 58px;
+  height: 28px;
+  margin-right: 2px;
+  border: 1px solid #999;
+  line-height: 28px\9;
+  text-align: center;
+  font-size: 12px;
+  color: #3c3c3c;
+  outline: 0;
+  vertical-align: top;
+}
+.amount span i {
+  display: inline-block;
+  width: 20px;
+  height: 30px;
+  vertical-align: top;
+}
+.amount span i em a {
+  display: inline-block;
+  width: 20px;
+  height: 14px;
+  background-image: url("http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/detail_icon4.png");
+  background-repeat: no-repeat;
+  vertical-align: top;
+  cursor: pointer;
+  margin-bottom: 2px;
+}
+.amount span i em:nth-child(1) a {
+  background-position: -160px -22px;
+}
+.amount span i em:nth-child(2) a {
+  background-position: -180px -22px;
+}
+
+.btns {
+  margin-top: 15px;
+}
+.btns a {
+  display: inline-block;
+  width: 148px;
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  vertical-align: middle;
+  border-radius: 2px;
+  font-family: "\5FAE\8F6F\96C5\9ED1";
+}
+.btns .buy {
+  background-color: #ee394b;
+  border: 1px solid #ee394b;
+}
+.btns .cart {
+  background-color: #fd7b7b;
+  border: 1px solid #fd7b7b;
+}
+.btns .cart i {
+  vertical-align: -3px;
+  margin-right: 5px;
+  width: 20px;
+  height: 20px;
+  background-position: 0 -20px;
+  display: inline-block;
+  background-image: url("http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/detail_icon4.png");
+  background-repeat: no-repeat;
+  font-style: normal;
+}
+
+.detail-list {
+  margin-top: 20px;
+}
+.detail-list img {
+  display: inline-block;
+  width: 500px;
+  height: 20px;
+}
+
+.scroll {
+  right: 0px;
+  position: fixed;
+  width: 42px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  background: #000;
+}
+.scroll .scroll_head {
+  height: 25%;
+}
+.scroll ul li {
+  width: 42px;
+  margin: 10px 0;
+  text-align: center;
+}
+.scroll ul li a {
+  display: inline-block;
+  width: 16px;
+  height: 17px;
+}
+.scroll ul li:nth-child(1) {
+  height: 23px;
+  display: inline-block;
+  margin: 10px 0;
+}
+.scroll ul li:nth-child(2) {
+  border-top: 1px dotted #666;
+  border-bottom: 1px dotted #666;
+  padding: 10px 0;
+}
+.scroll ul li:nth-child(2) img {
+  display: inline-block;
+  width: 30px;
+  height: 90px;
+}
+.scroll ul li:nth-child(3) a i {
+  width: 16px;
+  height: 17px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background: url("http://www.iqiyipic.com/common/fix/iqiyi_shop_images/toolbar_codeIcon.png");
+}
+.scroll ul li:nth-child(4) a i {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background: url("http://www.iqiyipic.com/common/fix/iqiyi_shop_images/feedback_icon.png");
+}
+.scroll ul li:nth-child(5) a i {
+  width: 25px;
+  height: 20px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background: url("http://www.iqiyipic.com/common/fix/iqiyi_shop_images/goTop_icon.png");
+}
+
+.hidebox {
+  width: 374px;
+  height: 158px;
+  line-height: 110px;
+  border: 1px solid red;
+  position: fixed;
+  top: 40%;
+  left: 40%;
+  z-index: 101;
+  text-align: center;
+  font-size: 12px;
+  color: #777;
+  display: none;
+  background-color: seashell;
+}
+.hidebox p {
+  height: 40px;
+  line-height: 40px;
+  padding-left: 10px;
+  color: #fff;
+  font-size: 16px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  font-family: "微软雅黑";
+  background: #fd7b7b url(/project/src/img/titlePinkBg.png) no-repeat;
+}
+.hidebox p a {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background: url(/project/src/img/close.png) no-repeat 6px 6px;
+}
+.hidebox a {
+  color: red;
+}
+
+.hidebg {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  /*宽度设置为100%，这样才能使隐藏背景层覆盖原页面*/
+  filter: alpha(opacity=60);
+  /*设置透明度为60%*/
+  opacity: 0.6;
+  /*非IE浏览器下设置透明度为60%*/
+  display: none;
+  /* http://www.jb51.net */
+  z-Index: 100;
+}

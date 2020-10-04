@@ -1,0 +1,500 @@
+@charset "utf-8";
+.content {
+    width: 1200px;
+    height: 600px;
+    border: 1px solid #e7e7e7;
+    margin: 0 auto;
+    color: #777;
+    .crumbs {
+        display: inline-block;
+        height: 50px;
+        line-height: 50px;
+        font-size: 13px;
+        a {
+            color: #333;
+        }
+        span {
+            color: #666;
+        }
+    }
+    .glass {
+        width: 420px;
+        display: inline;
+        float: left;
+    }
+    .goods_detail {
+        display: inline-block;
+        float: left;
+        width: 759px;
+        height: 400px;
+        margin-left: 20px;
+        position: relative;
+    }
+}
+
+.glass {
+    .spic {
+        position: relative;
+        width: 418px;
+        height: 418px;
+        border: 1px solid #e7e7e7;
+        z-index: 20;
+        display: table;
+        table-layout: fixed;
+        img {
+            display: inline-block;
+            width: 418px;
+            height: 418px;
+        }
+        .sf {
+            overflow: hidden;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 220px;
+            height: 220px;
+            background: url(/project/src/img/image_zoom.png) repeat;
+            cursor: move;
+            z-index: 10;
+            visibility: hidden;
+        }
+    }
+    .bf {
+        z-index: 99;
+        visibility: hidden;
+        top: 0px;
+        left: 0px;
+        overflow: hidden;
+        position: absolute;
+        width: 420px;
+        height: 420px;
+        left: 454px;
+        top: 240px;
+        border: 1px solid red;
+    }
+    .bpic {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        z-index: 99;
+    }
+    .piclist {
+        position: relative;
+        width: 420px;
+        height: 60px;
+        margin-top: 13px;
+        ul {
+            display: inline;
+            float: left;
+            overflow: hidden;
+            height: 60px;
+            margin-left: 20px;
+            li {
+                width: 60px;
+                height: 60px;
+                float: left;
+                margin-right: 20px;
+                img {
+                    display: inline-block;
+                    width: 60px;
+                    height: 60px;
+                }
+            }
+        }
+    }
+}
+
+.goods_detail {
+    h3 {
+        overflow: hidden;
+        color: #333;
+        font-size: 18px;
+        font-family: "\5FAE\8F6F\96C5\9ED1";
+        width: 100%;
+        font-weight: bold;
+        display: inline;
+    }
+    strong {
+        color: #ee394b;
+        font-size: 14px;
+        font-family: "\5FAE\8F6F\96C5\9ED1";
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+        font-weight: normal;
+    }
+    .prise {
+        height: 55px;
+        padding: 15px 20px;
+        background: url("http://www.iqiyipic.com/common/fix/qy_shop/detail-priceBg.png") no-repeat;
+        color: #777;
+        overflow: hidden;
+        background-size: cover;
+        position: relative;
+        label {
+            display: inline-block;
+            font-family: "\5b8b\4f53";
+            vertical-align: middle;
+            line-height: 50px;
+            float: left;
+        }
+        em {
+            font-family: arial;
+            font-size: 20px;
+            font-style: normal;
+            color: #ee394b;
+            white-space: nowrap;
+            line-height: 50px;
+        }
+        .now_prise {
+            position: absolute;
+            top: 10px;
+            left: 114px;
+            font-size: 30px;
+            font-weight: normal;
+            color: #ee394b;
+            white-space: nowrap;
+            line-height: 50px;
+        }
+    }
+    .detail_panel {
+        overflow: hidden;
+        padding: 15px 0 10px 0;
+        border-bottom: 1px dotted #c8c8c8;
+        display: block;
+        width: 100%;
+        li {
+            font-size: 12px;
+            color: #3c3c3c;
+            font-family: Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
+            display: inline;
+            float: left;
+            width: 130px;
+            border-left: 1px solid #ccc;
+            margin-left: -1px;
+            text-align: center;
+            i {
+                width: 16px;
+                height: 12px;
+                background: url("http://www.iqiyipic.com/common/fix/iqiyi_shop_images/detail-icon.png") no-repeat;
+                display: inline-block;
+                vertical-align: -1px;
+            }
+            span {
+                color: #c00;
+            }
+        }
+        li:nth-child(2) {
+            i {
+                background-position: -22px 0px;
+            }
+        }
+    }
+}
+
+.datail-info {
+    margin-top: 20px;
+    padding: 0 0 0 20px;
+    color: #777;
+    font: 12px "微软雅黑", Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
+    .info-postAge {
+        display: inline-block;
+        color: #777;
+        .deliveryAdd {
+            color: #3c3c3c;
+            font-family: Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
+        }
+        .desc {
+            margin: 0 3px;
+            color: #999;
+        }
+        .addr {
+            position: relative;
+            display: inline-block;
+            margin-right: 10px;
+            z-index: 10;
+            .addr-info {
+                cursor: pointer;
+                color: #3c3c3c;
+            }
+            .addr-pop {
+                position: absolute;
+                width: 330px;
+                border: 1px solid #e7e7e7;
+                background-color: #fff;
+                font-size: 12px;
+                top: 20px;
+                left: 0;
+                z-index: 100;
+                display: none;
+                padding: 10px;
+            }
+        }
+        .post-prise {
+            color: #3c3c3c;
+        }
+    }
+}
+
+.addr-info {
+    a {
+        cursor: pointer;
+        color: #3c3c3c;
+    }
+    i {
+        width: 9px;
+        height: 6px;
+        display: inline-block;
+        background-image: url("http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/detail_icon4.png");
+        background-repeat: no-repeat;
+        background-position: -100px 0px;
+        vertical-align: middle;
+    }
+}
+
+
+/*!省级联动*/
+
+.addr-pop {
+    .close {
+        position: absolute;
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        line-height: 18px;
+        color: #999;
+        right: 6px;
+        top: 0;
+    }
+    li {
+        position: relative;
+        display: inline;
+        float: left;
+        padding: 5px 10px 5px 0;
+    }
+}
+
+.amount {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-family: Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
+    label {
+        float: left;
+        display: inline-block;
+        text-align: left;
+    }
+    span {
+        float: left;
+        display: inline-block;
+        font-size: 0;
+        vertical-align: middle;
+        input {
+            width: 58px;
+            height: 28px;
+            margin-right: 2px;
+            border: 1px solid #999;
+            line-height: 28px\9;
+            text-align: center;
+            font-size: 12px;
+            color: #3c3c3c;
+            outline: 0;
+            vertical-align: top;
+        }
+        i {
+            display: inline-block;
+            width: 20px;
+            height: 30px;
+            vertical-align: top;
+            em a {
+                display: inline-block;
+                width: 20px;
+                height: 14px;
+                background-image: url("http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/detail_icon4.png");
+                background-repeat: no-repeat;
+                vertical-align: top;
+                cursor: pointer;
+                margin-bottom: 2px;
+            }
+            em:nth-child(1) a {
+                background-position: -160px -22px;
+            }
+            em:nth-child(2) a {
+                background-position: -180px -22px;
+            }
+        }
+    }
+}
+
+.btns {
+    margin-top: 15px;
+    a {
+        display: inline-block;
+        width: 148px;
+        height: 38px;
+        line-height: 38px;
+        text-align: center;
+        color: #fff;
+        font-size: 16px;
+        vertical-align: middle;
+        border-radius: 2px;
+        font-family: "\5FAE\8F6F\96C5\9ED1";
+    }
+    .buy {
+        background-color: #ee394b;
+        border: 1px solid #ee394b;
+    }
+    .cart {
+        background-color: #fd7b7b;
+        border: 1px solid #fd7b7b;
+        i {
+            vertical-align: -3px;
+            margin-right: 5px;
+            width: 20px;
+            height: 20px;
+            background-position: 0 -20px;
+            display: inline-block;
+            background-image: url("http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/detail_icon4.png");
+            background-repeat: no-repeat;
+            font-style: normal;
+        }
+    }
+}
+
+.detail-list {
+    margin-top: 20px;
+    img {
+        display: inline-block;
+        width: 500px;
+        height: 20px;
+    }
+}
+
+.scroll {
+    right: 0px;
+    position: fixed;
+    width: 42px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    background: #000;
+    .scroll_head {
+        height: 25%;
+    }
+    ul {
+        li {
+            width: 42px;
+            margin: 10px 0;
+            text-align: center;
+            a {
+                display: inline-block;
+                width: 16px;
+                height: 17px;
+            }
+        }
+        li:nth-child(1) {
+            height: 23px;
+            display: inline-block;
+            margin: 10px 0;
+        }
+        li:nth-child(2) {
+            border-top: 1px dotted #666;
+            border-bottom: 1px dotted #666;
+            padding: 10px 0;
+            img {
+                display: inline-block;
+                width: 30px;
+                height: 90px;
+            }
+        }
+        li:nth-child(3) {
+            a {
+                i {
+                    width: 16px;
+                    height: 17px;
+                    display: inline-block;
+                    background-repeat: no-repeat;
+                    background: url("http://www.iqiyipic.com/common/fix/iqiyi_shop_images/toolbar_codeIcon.png");
+                }
+            }
+        }
+        li:nth-child(4) {
+            a {
+                i {
+                    width: 20px;
+                    height: 20px;
+                    display: inline-block;
+                    background-repeat: no-repeat;
+                    background: url("http://www.iqiyipic.com/common/fix/iqiyi_shop_images/feedback_icon.png");
+                }
+            }
+        }
+        li:nth-child(5) {
+            a {
+                i {
+                    width: 25px;
+                    height: 20px;
+                    display: inline-block;
+                    background-repeat: no-repeat;
+                    background: url("http://www.iqiyipic.com/common/fix/iqiyi_shop_images/goTop_icon.png");
+                }
+            }
+        }
+    }
+}
+
+.hidebox {
+    width: 374px;
+    height: 158px;
+    line-height: 110px;
+    border: 1px solid red;
+    position: fixed;
+    top: 40%;
+    left: 40%;
+    z-index: 101;
+    text-align: center;
+    font-size: 12px;
+    color: #777;
+    display: none;
+    background-color: seashell;
+    p {
+        height: 40px;
+        line-height: 40px;
+        padding-left: 10px;
+        color: #fff;
+        font-size: 16px;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        font-family: "微软雅黑";
+        background: #fd7b7b url(/project/src/img/titlePinkBg.png) no-repeat;
+        a {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            background: url(/project/src/img/close.png) no-repeat 6px 6px;
+        }
+    }
+    a {
+        color: red;
+    }
+}
+
+.hidebg {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    /*宽度设置为100%，这样才能使隐藏背景层覆盖原页面*/
+    filter: alpha(opacity=60);
+    /*设置透明度为60%*/
+    opacity: 0.6;
+    /*非IE浏览器下设置透明度为60%*/
+    display: none;
+    /* http://www.jb51.net */
+    z-Index: 100;
+}
